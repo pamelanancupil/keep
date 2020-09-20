@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: black;
+}
+
+*:focus{
+    outline: none;
+}
