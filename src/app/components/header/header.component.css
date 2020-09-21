@@ -15,6 +15,7 @@ header .logo{
     justify-content: flex-start;
     align-items: center;
     width: 40%;
+    cursor: pointer;
 }
 
 img{

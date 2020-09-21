@@ -1,0 +1,109 @@
+.ctn-contact{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #f3f3f3;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40em;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.ctn-icon{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.ctn-i{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ctn-i i{
+    margin-right: 1em;
+    font-size: 1.5em;
+    color: #3D6DFA;
+}
+
+section h5{
+    font-weight: 500;
+}
+
+.ctn-icon h6{
+    font-weight: 500;
+    margin-left: 2.8em;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+}
+
+.ctn-form{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    height: 32em;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.16);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+}
+
+form input{
+    width: 90%;
+    border-radius: 1em;
+    border: none;
+    height: 3em;
+    background-color: #f3f3f3;
+    padding: 0.7em 0 0.7em 2em;
+    margin: 1em 0;
+}
+
+form textarea{
+    width: 90%;
+    border-radius: 1em;
+    border: none;
+    height: 8em;
+    background-color: #f3f3f3;
+    padding: 1.7em 0 0.7em 2em;
+    margin: 1em 0;
+}
+
+form button{
+    border: none;
+    border-radius: 0.5em;
+    color: #f3f3f3;
+    background-color: #3D6DFA;
+    padding: 0.4em 1.6em;
+    margin: 1em 0;
+    font-size: 1.3em;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #303180;
+    transition: 0.3s;
+}
+
+::placeholder{
+    font-size: 1.3em;
+}

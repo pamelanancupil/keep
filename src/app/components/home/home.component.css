@@ -39,6 +39,13 @@
     width: 6em;
     text-align: center;
     font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.ctn-text a:hover{
+    background-color: #303180;
+    transition: 0.3s;
 }
 
 .ctn-img-home{
