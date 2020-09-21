@@ -34,4 +34,13 @@ header .menu{
     font-size: 1em;
     font-weight: 500;
     color: #f7f5f5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
 }
