@@ -44,6 +44,12 @@ header .menu{
     cursor: pointer;
 }
 
+.menu a:focus{
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #cfcfcf;
+}
+
 .header_change{
     display: flex;
     flex-direction: row;
@@ -58,7 +64,6 @@ header .menu{
 }
 
 .header_change .menu a{
-    background-color: #fafafa;
     color: #333333;
 }
 
