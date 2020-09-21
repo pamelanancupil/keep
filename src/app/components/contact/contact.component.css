@@ -5,7 +5,7 @@
     background-color: #f3f3f3;
     justify-content: space-evenly;
     align-items: center;
-    height: 48em;
+    height: 41em;
 }
 
 section{
@@ -55,7 +55,7 @@ aside{
     width: 90%;
     align-items: center;
     justify-content: center;
-    height: 32em;
+    height: 28em;
     box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.16);
 }
 

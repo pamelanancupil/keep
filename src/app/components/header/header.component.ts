@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -23,6 +23,17 @@ export class HeaderComponent implements OnInit {
   }
   toContact(){
     document.getElementById('contact').scrollIntoView({behavior:"smooth"})
+  }
+
+  header_variable:boolean=false;
+  @HostListener("document:scroll")
+  scrollfunction(){
+    if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0){
+      this.header_variable=true;
+    }
+    else{
+      this.header_variable=false;
+    }
   }
 
 }
