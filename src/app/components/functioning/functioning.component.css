@@ -1,3 +1,18 @@
+*{
+    font-size: 1rem;
+}
+
+h4{
+    font-size: 2em;
+    line-height: 1.8em;
+    color: #242424;
+}
+p{
+    font-size: 1em;
+    line-height: 1.7em;
+    color: #808080;
+}
+
 .ctn-func{
     display: flex;
     flex-direction: column;
@@ -42,6 +57,7 @@ aside{
 
 aside h4{
     color: #3D6DFA;
+    line-height: 1.3em;
 }
 
 /*-------------------------------------------------------------- Section Tres */
@@ -60,3 +76,60 @@ aside h4{
     color: #3D6DFA;
     line-height: 1.3em;
 }
+
+/* Media Queries----------------------------------------------------------------*/  
+
+@media screen and (max-width: 1000px){
+    *{
+        font-size: 0.9rem;
+    }
+    .section-three{
+        height: 38em;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    .section-one, .section-three{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .section-one section{
+        width: 80%;
+        margin: 4em 0 0.5em 0;
+    }
+    .section-one aside{
+        align-items: center;
+        width: 80%;
+        margin-bottom: 3em;
+    }
+    .section-three section{
+        width: 80%;
+        margin: 4em 0 0.5em 0;
+    }
+    .section-three aside{
+        align-items: center;
+        width: 80%;
+        margin-bottom: 3em;
+    }
+    .section-three img{
+        width: 60%;
+    }
+    .section-two{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .section-two aside{
+        width: 80%;
+        margin: 4em 0 0.5em 0;
+    }
+    .section-two section{
+        align-items: center;
+        width: 80%;
+        margin-bottom: 3em;
+    }
+    
+  }

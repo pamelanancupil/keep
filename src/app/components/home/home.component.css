@@ -1,4 +1,31 @@
+*{
+    font-size: 1rem;
+}
 
+h1{
+    font-size: 3.3em;
+    color: #242424;
+}
+h4{
+    font-size: 2em;
+    line-height: 1.8em;
+    color: #242424;
+}
+h5{
+    font-size: 1.5em;
+    line-height: 1.8em;
+    color: #808080;
+}
+h6{
+    font-size: 1.1em;
+    line-height: 1.8em;
+    color: #808080;
+}
+p{
+    font-size: 1em;
+    line-height: 1.7em;
+    color: #808080;
+}
 
 /* --------------------------------------------------------------------Section 1 */
 
@@ -104,3 +131,58 @@
     color: #f7f5f5;
 }
 
+/* Media Queries----------------------------------------------------------------*/  
+
+@media screen and (max-width: 1200px){
+    *{
+        font-size: 0.9rem;
+    }
+    .section-two{
+        height: 35em;
+    }
+    .ctn-img-certif{
+        margin-top: 0;
+    }
+    
+    .ctn-text-certif{
+        margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 1100px){
+    *{
+        font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 960px){
+    *{
+        font-size: 0.7rem;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    .section-two{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+    .ctn-img-certif{
+        width: 80%;
+        margin-top: 1em;
+    }
+
+    .ctn-img-certif img{
+        width: 60%;
+    }
+    
+    .ctn-text-certif{
+        width: 80%;
+        margin: 1em 0 3em 0;
+        height: auto;
+    }
+    .ctn-text-certif h4{
+        line-height: 1.3em;
+    }
+  }

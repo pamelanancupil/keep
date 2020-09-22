@@ -1,3 +1,24 @@
+*{
+    font-size: 1rem;
+}
+
+h4{
+    font-size: 2em;
+    line-height: 1.8em;
+    color: #242424;
+}
+
+h6{
+    font-size: 1.1em;
+    line-height: 1.8em;
+    color: #808080;
+}
+p{
+    font-size: 1em;
+    line-height: 1.7em;
+    color: #808080;
+}
+
 .ctn-contact{
     display: flex;
     flex-direction: row;
@@ -71,23 +92,23 @@ form h4{
 }
 
 form input{
-    width: 90%;
-    border-radius: 1em;
+    width: 80%;
+    border-radius: 0.5em;
     border: none;
-    height: 3em;
+    height: 2.7em;
     background-color: #f3f3f3;
-    padding: 0.3em 0 0.3em 1.5em;
-    margin: 0.8em 0;
+    padding: 0 1.5em;
+    margin: 0.5em 0;
 }
 
 form textarea{
-    width: 90%;
-    border-radius: 1em;
+    width: 80%;
+    border-radius: 0.5em;
     border: none;
     height: 6em;
     background-color: #f3f3f3;
-    padding: 1em 0 0.3em 1.8em;
-    margin: 0.8em 0;
+    padding: 1em 1.5em;
+    margin: 0.5em 0;
 }
 
 form button{
@@ -111,3 +132,42 @@ form button:hover{
 ::placeholder{
     font-size: 1.1em;
 }
+
+/* Media Queries----------------------------------------------------------------*/  
+
+@media screen and (max-width: 1000px){
+    *{
+        font-size: 0.9rem;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    .ctn-contact{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f3f3f3;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    section{
+        width: 80%;
+        margin: 4em 0 2em 0;
+    }
+    aside{
+        width: 80%;
+        align-items: flex-start;
+        margin: 1em 0 3em 0;
+    }
+    ::placeholder{
+        font-size: 0.9em;
+    }
+    form input{
+        padding: 0 1.1em;
+    }
+    
+    form textarea{
+        padding: 1em 1.1em;
+    }
+  }

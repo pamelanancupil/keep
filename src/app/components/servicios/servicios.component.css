@@ -1,3 +1,19 @@
+*{
+    font-size: 1rem;
+}
+
+h4{
+    font-size: 2em;
+    line-height: 1.8em;
+    color: #242424;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.7em;
+    color: #808080;
+}
+
 .ctn-services{
     display: flex;
     flex-direction: column;
@@ -47,6 +63,7 @@ aside{
 
 aside h4{
     color: #3D6DFA;
+    line-height: 1.3em;
 }
 
 /*-------------------------------------------------------------- Section Tres */
@@ -84,7 +101,7 @@ aside h4{
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 3em;
 }
 
@@ -93,6 +110,67 @@ aside h4{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 19%;
+    width: 9em;
+    margin: 1em 0;
 }
 
+/* Media Queries----------------------------------------------------------------*/  
+
+@media screen and (max-width: 1000px){
+    *{
+        font-size: 0.9rem;
+    }
+    .section-one{
+        height: 35em;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    .section-one, .section-three{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .section-one section{
+        width: 80%;
+        margin: 4em 0 0.5em 0;
+    }
+    .section-one aside{
+        align-items: center;
+        width: 80%;
+        margin-bottom: 3em;
+    }
+    .section-one img{
+        width: 60%;
+    }
+    .section-two{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .section-two aside{
+        width: 80%;
+        margin: 4em 0 0.5em 0;
+    }
+    .section-two section{
+        align-items: center;
+        width: 80%;
+        margin-bottom: 3em;
+    }
+    .section-two img{
+        width: 70%;
+    }
+    .section-three section{
+        margin: 4em 0 3em 0;
+    }
+    .section-three section h4{
+        width: 80%;
+        text-align: start;
+    }
+    .ctn-ctn{
+        flex-wrap: wrap;
+        margin-top: 1em;
+    }
+  }
